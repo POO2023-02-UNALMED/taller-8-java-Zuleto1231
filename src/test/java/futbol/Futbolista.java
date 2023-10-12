@@ -7,7 +7,7 @@ public  abstract class Futbolista implements Comparable<Object> {
 	
 
 	public Futbolista() {
-		this("Maradona",30,"Delantero");
+		this("Maradona",30,"delantero");
 	}
 	public Futbolista(String nombre,int edad, String posicion) {
 		this.nombre=nombre;
@@ -29,7 +29,7 @@ public  abstract class Futbolista implements Comparable<Object> {
         }
 	
 	public String toString() {
-		return "El futbolista"+this.nombre+" tiene "+this.edad+", y juega de"+this.posicion;
+		return "El futbolista "+this.nombre+" tiene "+this.edad+", y juega de "+this.posicion;
 	}
 
 

@@ -4,7 +4,7 @@ public class Jugador extends Futbolista {
 	public short golesMarcados;
 	public byte dorsal;
 	
-//	Constructores
+
 	public Jugador() {
 		super();
 		this.golesMarcados=289;
@@ -16,7 +16,7 @@ public class Jugador extends Futbolista {
 		this.golesMarcados=golesMarcados;
 		this.dorsal=dorsal;
 	}
-//	Implementación del CompareTo
+
 	@Override
 	public int compareTo(Object o) {
 		if (o instanceof Jugador) {
@@ -29,8 +29,7 @@ public class Jugador extends Futbolista {
 		 
 	}
 	
-	
-//	Metodo toString
+
 	public String toString() {
 		return "El futbolista "+this.getNombre()+" tiene "+this.getEdad()+ ", y juega de "+this.getPosicion()+" con el dorsal "+this.dorsal+ ". Ha marcado "+this.golesMarcados;
 	}
