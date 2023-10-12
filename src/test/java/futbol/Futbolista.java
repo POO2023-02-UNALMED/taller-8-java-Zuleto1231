@@ -5,7 +5,7 @@ public  abstract class Futbolista implements Comparable<Object> {
 	private int edad;
 	private final String posicion;
 	
-//Constructores	
+
 	public Futbolista() {
 		this("Maradona",30,"Delantero");
 	}
@@ -15,12 +15,11 @@ public  abstract class Futbolista implements Comparable<Object> {
 		this.posicion=posicion;
 	}
 
-//Metodo abstracto	
+
 	public abstract boolean jugarConLasManos();
 	
 
 
-//Metodos normales.
 	public boolean equals(Futbolista f) {
         if (this == f) {
             return true; // Son la misma instancia
@@ -33,8 +32,7 @@ public  abstract class Futbolista implements Comparable<Object> {
 		return "El futbolista"+this.nombre+" tiene "+this.edad+", y juega de"+this.posicion;
 	}
 
-	
-//	Getters y Setters
+
 	public String getNombre() {
 		return nombre;
 	}
